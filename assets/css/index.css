@@ -1,0 +1,103 @@
+body{
+    /* background-image: linear-gradient( #00539c3f, #00539cac); */
+    background-image: url("../images/bg_smile.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 140%;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ul {
+background-color: rgba(0, 0, 0, 0.458);
+padding-left: 70%;
+list-style-type: none;
+overflow: hidden;
+padding-top: 15px;
+margin: -1%;
+padding-bottom: 10px;
+border-color: rgba(0, 0, 0, 0.458);
+position: fixed;
+width: 100%;
+}
+
+li {
+float: left;
+}   
+
+li a {
+display: block;
+color: whitesmoke;
+font-size: 25px;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+#img_style{
+margin-left: 73%;
+margin-top: 10%;
+position: fixed;
+}
+#text{
+font-size: 55px;
+color: white;
+margin-left: 21%;
+position: absolute;
+margin-bottom: 5%;
+margin-top: 20%;
+
+}
+#short_text{
+    font-size: 45px; 
+    color: #F19540;
+    margin-left: 25%;
+    font-style: italic; 
+    font-family: fantasy; 
+    position: absolute; 
+    margin-top: 25;
+    text-shadow: 2px 2px #DB5686;
+}
+
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0.401);
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    border: none;
+    width: 156%;
+    margin-left: 150%;
+  }
+
+  .dropup {
+    position: relative;
+    display: inline-block;
+    margin-top: 39%;
+
+  }
+
+  .dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #f1964082;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropup-content a:hover {background-color: #F19540}
+
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+
+  .dropup:hover .dropbtn {
+    background-color: #00192f;
+    box-shadow: #00192f;
+  }

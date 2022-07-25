@@ -1,0 +1,12 @@
+.short_container{
+    
+    margin-top: 8%;
+    background-image: linear-gradient( #F19540, #DB5686);
+    /* background-color: #DB5686; */
+    font-size: 25px;
+    padding: 25px;
+    box-shadow: 10px 10px 10px #00539c3f;
+}
+.short_container:hover{
+    box-shadow: 20px 20px 50px 10px #00539c3f inset;   
+}
