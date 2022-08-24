@@ -6,24 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
+    <link rel="stylesheet" href="./assets/css/gallery.css">
 </head>
 <body>
     <ul>
-        <li style="font-size: 55px;"><a href="#index"> <b>Home</b> </a></li>
-        <li style="opacity: 80%;"><a href="./pages/about.html">About</a></li>
-        <li style="opacity: 80%;"><a href="./pages/skills.html">Skills</a></li>
-        <li style="opacity: 80%;"><a href="./pages/gallery.html">Gallery</a></li>
+        <li id="home_page" onclick="homePageFunction()"><a href="#"> <b>Home</b> </a></li>
+        <li id="about_page" onclick="aboutPageFunction()"><a href="#div_container">About</a></li>
+        <li id="skills_page" onclick="skillsPageFunction()"><a href="#skills_container">Skills</a></li>
+        <li id="projects_page" onclick="projectsPageFunction()"><a href="#projects_container">Projects</a></li>
+        <li id="gallery_page" onclick="galleryPageFunction()"><a href="#gallery_container">Gallery</a></li>
       </ul>
-      <div style=" display: flex; flex-direction: row; ">
-        <p id="text">
-            Hey!! Its Me... <strong>SANGEETHA</strong>
-        </p><br><br><br><br><br><br>
-        <p id="short_text" style="margin-top: 25%;">
-            Techie | Artist | Calligrapher 
-        </p> 
-          <img id="img_style" src="./assets/images/SANG_PROFILE.png" alt="Profile image of Sangeetha" width="35%" >
+        <div style=" display: flex; flex-direction: row; ">
+            <p id="text">
+                Hey!! Its Me... <strong>SANGEETHA</strong>
+            </p><br><br><br><br><br><br>
+            <p id="short_text" style="margin-top: 25%;">
+                Techie | Artist | Calligrapher 
+            </p> 
+            <img id="img_style" src="./assets/images/SANG_PROFILE.png" alt="Profile image of Sangeetha" width="35%" >
+        </div>
+    <div id="div_container">
+        <img class="about_img" src="./assets/images/SANG_ABOUT.png" style="width: 32%; height: 630px;" >
+      <div class="text_style"> 
+        <br><br><br><br>
+        
+        <h1>About Me</h1> 
+        <p> 
+            Hi All! I am <strong>Sangeetha Ramachandran</strong>. Basically, I belong to Tiruchendur. 
+            I have been living in Chennai for 8 years now. I stay here with my family. Apart from my 
+            parents,there are two older sisters in my family. Currently, I am exploring myself in 
+            Freshworks Software Academy after I have completed my higher secondary from MPB Government 
+            Girls Higher Secondary School, Tambaram. I am very interested in the Software field and I
+            got an opportunity to join FWSA.I learnt so many things at FWSA and they have also 
+            guided me to achieve my goals in the right way. I am also inclined towards creative activities
+             such as dancing, drawing and craftwork. I have been a leader for my squad while studying in 
+             FWSA.In my free time, I enjoy going out with friends and trying new restaurants to eat. I 
+             also enjoy watching humorous movies,listening to music and reading short stories.
+          </p>
+         
+      </div>
     </div>
-    <div class="dropup">
+
+    <div id="skills_container" style="display: flex; flex-direction:row;">
+        <div class="short_container" style="margin-left: 5%; margin-right: 5%; width: 55%; height: 536px;">
+            <h3>TECH</h3>
+            <img src="./assets/images/developer.png" alt="TECH" style="margin-left: 12%;"><br>
+            <span class="text_styles">I have learnt 7 languages which are html, css, javascript, DBMS, mysql, java
+                ruby on rails.
+                I have done my first project within 100 days after joining FWSA.</span><br><br>
+                
+                <a href="https://github.com/SangeethaRamachanthiran?tab=repositories"
+                style=" text-decoration: none; ">
+                <img style=" padding: 5px; border-radius: 20px; background-color: white; margin-left: 30%;" src="./assets/images/github.png" alt="Google drive" width="35%"></a>
+        </div>
+        <div class="short_container" style="margin-left: 3%;margin-right: 5%; width: 55%;">
+            <h3>ELS</h3>
+            <img src="./assets/images/ELS.png" alt="ELS" style="margin-left: 13%; width: 65%; height: 200px;"><br>
+            <span class="text_styles">In the English & Life skills side, I have learnt so many habits, how
+                I behave in workplace and how I can handle such a situation happened in workplace and life.
+            </span><br><br>
+                <a href="https://drive.google.com/drive/u/0/folders/1kqpBKVopJL8gaZBX5opzINHbeLvXt7Pn"
+                style=" text-decoration: none; ">
+                <img style="padding: 5px; border-radius: 20px; background-color: white; margin-left: 30%;" src="./assets/images/google_drive.png" alt="Google drive" width="35%"></a>
+        </div>
+        <div class="short_container" style="margin-left: 3%; margin-right: 5%; width: 55%;">
+            <h3>ECA </h3>
+            <img src="./assets/images/ECA.png" alt="ECA" style="margin-left: 12%;"><br>
+            <span class="text_styles">Extra curricular thing, I like to draw, dance, have some interest in crafts work
+                and also I am very much interested in calligraphy.
+            </span><br><br>
+                <a href="https://dribbble.com/Sangeetha_Art"
+                style=" text-decoration: none; ">
+                <img style="padding: 5px; border-radius: 20px; background-color: white; margin-left: 30%;" src="./assets/images/dribble.png" alt="Dribble logo" width="35%"></a>
+            
+        </div>
+    </div>
+
+    <div id="projects_container">
+      <div id="SWA_container" style="display: flex; flex-direction: row;">
+        <div class="SWA_project"> <br> PROJECT NAME: Smiley World Art <br><br>
+          LANGUAGES: HTML,CSS & JS <br>
+          <a href="https://github.com/fwsa-batch2/sangeetha.ramachanthiran__web_project"><img style=" padding: 5px; border-radius: 20px; background-color: white; margin-top: 4%; margin-left: 4%;" src="./assets/images/github.png" alt="github" width="20%"></a>
+        </div>
+        <a href="https://smileyworldartapp-ui-sangeetharamachandiran.netlify.app/"><img src="./assets/images/logo in black.png" alt="smiley-world-art-LOGO" width="95%" style="margin-top: 6%; margin-left: 2%;"></a>
+      </div>
+      <div id="todo_container" style="display: flex; flex-direction: row;">
+        <img src="./assets/images/TODO.png" alt="todo-LOGO" width="40%" height="150px" style="margin-top: 6%; margin-left: 5%;">
+        <div class="todo_project"> <br> PROJECT NAME: Todo <br><br>
+          LANGUAGES: Ruby On Rails <br>
+          <a href="https://github.com/SangeethaRamachanthiran/Todo-app"><img style=" padding: 5px; border-radius: 20px; background-color: white; margin-top: 4%; margin-left: 4%;" src="./assets/images/github.png" alt="github" width="20%"></a>
+        </div>
+      </div>
+      
+      <div id="evalU_container" style="display: flex; flex-direction: row;">
+        <div class="evalU_project"> <br> PROJECT NAME: EVAL U <br><br>
+          LANGUAGES: Ruby On Rails <br>
+          <a href="https://github.com/SangeethaRamachanthiran/evalU"><img style=" padding: 5px; border-radius: 20px; background-color: white; margin-top: 4%; margin-left: 4%;" src="./assets/images/github.png" alt="github" width="20%"></a>
+        </div>
+        <a href="https://eval-u-sangeetha.herokuapp.com/"><img src="./assets/images/EVALU.png" alt="EVALU-LOGO" width="90%" style="margin-top: 10%; margin-left: 5%;"></a>
+      </div>
+    </div>
+
+    <div id="gallery_container" style="padding-top: 5%; width: 100%;">
+        <div class="container" >
+          <img src="./assets/images/Oct-8.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text_img">Lovable Family</div>
+          </div>
+        </div>
+        <div class="container" style="margin-left: 35%; margin-top: -17%;">
+          <img src="./assets/images/offline_class.jpg" alt="Avatar" class="image" style="width:100%; height: 323px;">
+          <div class="middle">
+            <div class="text_img">Offline class after Lockdown</div>
+          </div>
+        </div>
+        <div class="container" style="margin-left: 62%; margin-top: -17%;">
+          <img src="./assets/images/10dots_vth_G.jpg" alt="Avatar" class="image" style="width:100%; height: 321px;">
+          <div class="middle">
+            <div class="text_img">10 dots with "G"</div>
+          </div>
+        </div>
+        <div class="container" style="height: 333px; margin-top: 2%;">
+          <img src="./assets/images/cliq_with_coach.jpg" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <div class="text_img">Caring Sister "Chitra Mam"</div>
+          </div>
+        </div>
+        <div class="container" style="margin-left: 35%; margin-top: -17.5%;">
+          <img src="./assets/images/first_trip.jpg" alt="Avatar" class="image" style="width:100%; height: 333px;">
+          <div class="middle">
+            <div class="text_img">First trip to ECR</div>
+          </div>
+        </div>
+        <div class="container" style="margin-left: 62%; margin-top: -17.5%;">
+          <img src="./assets/images/dance_squad.jpg" alt="Avatar" class="image" style="width:100%; height: 338px;">
+          <div class="middle">
+            <div class="text_img">Flash mob</div>
+          </div>
+        </div>
+    <!-- <div class="dropup">
         <button class="dropbtn"> ^ </button>
         <div class="dropup-content">
           <a href="https://www.instagram.com/p/CHzUkx7niOt/?igshid=YmMyMTA2M2Y=">
@@ -32,6 +155,34 @@
               <img src="./assets/images/linkedIn.png" alt="Linked in" width="100%"></a>
           <a href="#"><img src="./assets/images/facebook.png" alt="facebook" width="100%"></a>
         </div>
-      </div>
+      </div> -->
+      <footer>
+        <div id="footer">
+          <div style="margin-top: 4%;">
+            <a href="https://www.linkedin.com/in/sangeetha-ramachandran-068784243"><img src="./assets/images/linkedIn.png" alt="linkedin" width="4%"></a>
+            <a href="https://www.instagram.com/p/CHzUkx7niOt/?igshid=YmMyMTA2M2Y="><img src="./assets/images/insta.png" alt="instagram" width="4%"></a>
+            <a href="#"><img src="./assets/images/facebook.png" alt="facbook" width="4.3%"></a>
+          </div>
+          <span style="margin-top: 8vw; margin-left: 2%; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Copyright © 2022,Personal site All Rights Reserved.</span>
+        </div> 
+        <p></p>
+      </footer>
 </body>
+<script>
+  function homePageFunction() {
+    document.getElementById("home_page").style.textDecoration = "underline";
+  }
+  function aboutPageFunction() {
+    document.getElementById("about_page").style.textDecoration = "underline";
+  }
+  function skillsPageFunction() {
+    document.getElementById("skills_page").style.textDecoration = "underline"
+  }
+  function projectsPageFunction() {
+    document.getElementById("projects_page").style.textDecoration = "underline";
+  }
+  function galleryPageFunction() {
+    document.getElementById("gallery_page").style.textDecoration = "underline";
+  }
+</script>
 </html>
